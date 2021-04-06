@@ -87,6 +87,6 @@ app.get("/", (req,res)=>{
     res.send("Hello from the server side");
 });
 
-app.listen(5000, ()=>{
+app.listen(process.env.PORT || 5000, ()=>{
     console.log("Server has started");
 });
